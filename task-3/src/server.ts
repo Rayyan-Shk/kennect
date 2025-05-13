@@ -2,7 +2,7 @@ import express from 'express';
 import { addDays, addWeeks, subDays, parse, format } from 'date-fns';
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.use(express.json());
 
@@ -114,7 +114,7 @@ app.get('/date', (req, res) => {
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}`);
     console.log('Try these examples:');
-    console.log('1. http://localhost:3000/date?q=add, 6 days to today');
-    console.log('2. http://localhost:3000/date?q=add, 6 weeks to today');
-    console.log('3. http://localhost:3000/date?q=subtract, 187 days from 12-Jan-2019');
+    console.log(`1. http://localhost:${port}/date?q=add, 6 days to today`);
+    console.log(`2. http://localhost:${port}/date?q=add, 6 weeks to today`);
+    console.log(`3. http://localhost:${port}/date?q=subtract, 187 days from 12-Jan-2019`);
 }); 

@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  task2-next:
+    build:
+      context: ./task-2
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
+
+  task3-express:
+    build:
+      context: ./task-3
+    ports:
+      - "3001:3000"
+    environment:
+      - PORT=3000
+      - NODE_ENV=production
+    restart: unless-stopped
+
+networks:
+  app-network:
+    driver: bridge 

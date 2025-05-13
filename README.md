@@ -64,4 +64,47 @@ Each project has its own setup instructions and requirements. Please refer to th
 - **Task 2:** Next.js, TypeScript, Tailwind CSS, Chart.js
 - **Task 3:** Node.js, TypeScript, Express.js
 
+## Running with Docker
 
+You can start both projects with a single command using Docker Compose.
+
+### Prerequisites
+
+- Docker and Docker Compose installed on your system
+
+### Steps to Run
+
+1. Clone this repository
+2. From the root directory, run:
+
+```bash
+docker-compose up -d
+```
+
+3. Access the applications at:
+   - Task 2 (GitHub Issue Analyzer): http://localhost:3000
+   - Task 3 (Date Calculator API): http://localhost:3001
+
+### To Stop
+
+```bash
+docker-compose down
+```
+
+## Individual Project Descriptions
+
+### Task 2: GitHub Issue Analyzer (Next.js)
+
+A web application built with Next.js for analyzing GitHub issues.
+
+### Task 3: Date Calculator API (Express)
+
+A simple REST API for date calculations that can:
+
+- Add days/weeks to dates
+- Subtract days/weeks from dates
+
+Example endpoints:
+
+- http://localhost:3001/date?q=add, 6 days to today
+- http://localhost:3001/date?q=subtract, 187 days from 12-Jan-2019
