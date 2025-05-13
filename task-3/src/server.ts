@@ -71,7 +71,7 @@ app.get('/', (req, res) => {
         <h1>Date Calculator API</h1>
         <p>Use this API to perform date calculations. Here are some examples:</p>
         <ul>
-            <li>/date?q=add, 6 days to today <a href="/date?q=add, 6 days to today">test</a></li>
+            <li>/date?q=add, 6 days to today<a href="/date?q=add, 6 days to today">test</a></li>
             <li>/date?q=add, 6 weeks to today <a href="/date?q=add, 6 weeks to today">test</a></li>
             <li>/date?q=subtract, 187 days from 12-Jan-2019 <a href="/date?q=subtract, 187 days from 12-Jan-2019">test</a></li>
         </ul>
