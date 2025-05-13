@@ -19,7 +19,7 @@ const badgeVariants = cva(
           "text-foreground [a&]:hover:bg-accent [a&]:hover:text-accent-foreground",
       },
     },
-    defaultVariants: {
+    defaultVariants:{
       variant: "default",
     },
   }
